@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+     <bean id="myCarCourse" class = "vehicleApp.CarCourse"></bean>
+     
+     
+    <bean id="profil" class="vehicleApp.Customer">
+    		<constructor-arg ref="myCarCourse"></constructor-arg> 
+    		<property name="id" value="001"></property>
+			<property name="name" value="Dimas Kamurapi"></property>
+	    	<property name="email" value="dkamurapi@gmail.com"></property>
+	    	<property name="nohp" value="081259988776"></property>
+			
+	</bean>
+        
+</beans>
